@@ -1,0 +1,79 @@
+.redesSociales{
+    background-color: rgb(255, 255, 255); 
+    display: flex; 
+    justify-content: flex-end; 
+    height: 1.7em;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgb(160, 147, 147);
+
+    img{
+        height: 30px; 
+        width: 30px; 
+        padding: 4px;
+    }
+}
+
+.menu{
+    background-color: rgb(255, 255, 255);
+    height: 3em;
+    border-bottom: 1px solid rgb(160, 147, 147);
+
+
+    .ulNav{
+        margin: auto;
+    }
+
+
+    .ulEnlace {
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        text-transform: uppercase;   
+        font-weight: 600;
+    }
+
+
+    .ulLink{
+        padding: 0.33em;
+    }
+    
+
+
+    @media screen and (max-width: 992px) {
+
+        .ulLink{
+            background-color: rgba(8, 8, 83, 0.93);
+            text-align: center;
+        }
+    
+    }
+}
+
+.logosRs{
+    a{
+        text-decoration: none;
+    }
+}
+
+.telContact{
+    display: flex;
+
+    img{
+        margin: 0 5px;
+    }
+
+    p{
+        margin:0 5px;
+    }
+}
+
+.mailContact{
+    display: flex;
+
+    img{
+        margin: 0 5px;
+    }
+
+    p{
+        margin:0 5px;
+    }
+}

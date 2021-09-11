@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap%27");
+@import url("https://fonts.googleapis.com/css2?family=Oswald&family=Roboto:wght@300;400&display=swap%27");
+.redesSociales {
+  background-color: white;
+  display: flex;
+  justify-content: flex-end;
+  height: 1.7em;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #a09393;
+}
+.redesSociales img {
+  height: 30px;
+  width: 30px;
+  padding: 4px;
+}
+
+.menu {
+  background-color: white;
+  height: 3em;
+  border-bottom: 1px solid #a09393;
+}
+.menu .ulNav {
+  margin: auto;
+}
+.menu .ulEnlace {
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.menu .ulLink {
+  padding: 0.33em;
+}
+@media screen and (max-width: 992px) {
+  .menu .ulLink {
+    background-color: rgba(8, 8, 83, 0.93);
+    text-align: center;
+  }
+}
+
+.logosRs a {
+  text-decoration: none;
+}
+
+.telContact {
+  display: flex;
+}
+.telContact img {
+  margin: 0 5px;
+}
+.telContact p {
+  margin: 0 5px;
+}
+
+.mailContact {
+  display: flex;
+}
+.mailContact img {
+  margin: 0 5px;
+}
+.mailContact p {
+  margin: 0 5px;
+}
+
+/*# sourceMappingURL=style.css.map */
