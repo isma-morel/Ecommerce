@@ -1,3 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap%27');
-@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Roboto:wght@300;400&display=swap%27');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Roboto:wght@100;300;400;500&display=swap');
+@import 'base/reset';
+@import 'base/var';
+@import 'base/list';
 @import 'components/header';
+@import 'components/cards';

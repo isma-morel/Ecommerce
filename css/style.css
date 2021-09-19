@@ -1,5 +1,19 @@
-@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap%27");
-@import url("https://fonts.googleapis.com/css2?family=Oswald&family=Roboto:wght@300;400&display=swap%27");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Roboto:wght@100;300;400;500&display=swap");
+/*reset*/
+* {
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*font-family*/
+/*FONT WEIGHT*/
+/*MEDIUM*/
+/*REGULAR*/
+/*FONT-SIZE*/
+/*button*/
 .redesSociales {
   background-color: white;
   display: flex;
@@ -60,6 +74,62 @@
 }
 .mailContact p {
   margin: 0 5px;
+}
+
+/*CARDS*/
+.container-cards {
+  width: 100%;
+}
+
+.card-1 {
+  text-align: center;
+  margin: 20px 0;
+  transition: all 0.2s ease-in-out;
+  padding: 20px;
+  width: 270px;
+}
+.card-1:hover {
+  border-radius: 4px;
+  box-shadow: 2px 2px 5px 3px rgba(110, 104, 104, 0.75);
+  -webkit-box-shadow: 2px 2px 5px 3px rgba(110, 104, 104, 0.75);
+  -moz-box-shadow: 2px 2px 5px 3px rgba(110, 104, 104, 0.75);
+}
+.card-1 a {
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  color: black;
+}
+.card-1 a img {
+  width: 100%;
+  height: auto;
+}
+.card-1 a div {
+  text-align: center;
+  margin-top: 10px;
+}
+.card-1 a div .p-categories span {
+  font-size: 14px;
+}
+.card-1 a div h3 {
+  font-size: 17px;
+  font-weight: bold;
+}
+.card-1 a div .p-prices span {
+  font-size: 17px;
+  color: #05a805;
+  font-weight: bold;
+}
+.card-1 a div button {
+  font-size: 15px;
+  padding: 10px;
+  background-color: #e6e6e6;
+  border: none;
+  transition: all 0.3s ease-in-out;
+}
+.card-1 a div button:hover {
+  background-color: black;
+  color: #ffff;
 }
 
 /*# sourceMappingURL=style.css.map */

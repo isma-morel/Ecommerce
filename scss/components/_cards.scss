@@ -1,0 +1,60 @@
+/*CARDS*/
+
+.container-cards {
+    width: 100%;
+}
+
+.card-1 {
+    text-align: center;
+    margin: 20px 0;
+    transition: all .2s ease-in-out;
+    padding: 20px;
+    width: 270px;
+    &:hover {
+        border-radius: 4px;
+        box-shadow: 2px 2px 5px 3px rgba(110,104,104,0.75);
+        -webkit-box-shadow: 2px 2px 5px 3px rgba(110,104,104,0.75);
+        -moz-box-shadow: 2px 2px 5px 3px rgba(110,104,104,0.75);
+    }
+        a {
+        text-decoration: none;
+        font-family: $family-2;
+        font-weight: 300;
+        color: black;
+        img {
+            width: 100%;
+            height: auto;
+        }
+        div {
+            text-align: center;
+            margin-top: 10px;
+            .p-categories{
+                span {
+                    font-size: nth($font-sizes , 4 );
+                }
+            }
+            h3 {
+                font-size: nth($font-sizes , 3 );
+                font-weight: bold;
+            }
+            .p-prices {
+                span {
+                    font-size: nth($font-sizes , 3 );
+                    color: rgb(5, 168, 5);
+                    font-weight: bold;
+                }
+            }
+            button {
+                font-size: nth($font-sizes , 5 );
+                padding: 10px;
+                background-color: rgb(230, 230, 230);
+                border: none;
+                transition: all .3s ease-in-out;
+                &:hover {
+                    background-color: black;
+                    color: #ffff;
+                }
+            }
+        }
+    }
+}
