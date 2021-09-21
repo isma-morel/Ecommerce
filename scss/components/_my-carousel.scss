@@ -1,7 +1,7 @@
 .carrusel {
     width: 100%;
     max-width: 192rem;
-    @include neo( 1, 1.6rem, 1.6rem);
+    @include neo( 1, 0, 1.6rem);
     overflow-x: hidden;
     .grande {
         width: 200%;
@@ -9,13 +9,13 @@
         flex-flow: row nowrap;
         justify-content: flex-start;
         align-items: center;
-        @include neo( 1, 1.6rem, 1.6rem);
+        @include neo( 1, 0, 1.6rem);
         transition: all .5s ease;
         transform: translateX(0%);
 
         .img-carousel1 {
             width: calc(100% / 2);
-            @include neo( 1, 1.6rem, 1.6rem);
+            @include neo( 1, 0, 1.6rem);
         }
     }
 
@@ -37,7 +37,7 @@
 }
 
 .carrusel .punto.activo {
-    background-color: #a5b1c6;
+    background-color: #9ca2ad;
     opacity: 1;
     box-shadow: 0px 0px 0px 0px #fff9, 0px 0px 0px 0px #fff9,
     0px 0px 0px 0px #0001, 0px 0px 0px 0px #0001, inset -8px -8px 20px 0px #fff9,
