@@ -1,6 +1,9 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Roboto:wght@100;300;400;500&display=swap");
 /*reset*/
 * {
+  font-size: 62.5%;
+  /*1REM = 10PX*/
   list-style: none;
   text-decoration: none;
   margin: 0;
@@ -9,6 +12,17 @@
 }
 
 /*font-family*/
+/* Aquí definimos las Custom properties */
+:root {
+  --negro: #393939;
+  --blanco: #ececec;
+  --sombra-ppal: #c9c9c9;
+  --sombra-sec: #ffffff;
+  --borde-negro: #00000050;
+  --marcado: rgb(127, 195, 255);
+}
+
+/*Neumorphism*/
 /*FONT WEIGHT*/
 /*MEDIUM*/
 /*REGULAR*/
@@ -76,6 +90,63 @@
   margin: 0 5px;
 }
 
+.carrusel {
+  width: 100%;
+  max-width: 192rem;
+  color: var(--negro);
+  transition: all 0.4s ease;
+  border-radius: 1.6rem;
+  background-color: var(--blanco);
+  box-shadow: 1.6rem 1.6rem 3.2rem var(--sombra-ppal), -1.6rem -1.6rem 3.2rem var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+  overflow-x: hidden;
+}
+.carrusel .grande {
+  width: 200%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  color: var(--negro);
+  transition: all 0.4s ease;
+  border-radius: 1.6rem;
+  background-color: var(--blanco);
+  box-shadow: 1.6rem 1.6rem 3.2rem var(--sombra-ppal), -1.6rem -1.6rem 3.2rem var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+  transition: all 0.5s ease;
+  transform: translateX(0%);
+}
+.carrusel .grande .img-carousel1 {
+  width: calc(100% / 2);
+  color: var(--negro);
+  transition: all 0.4s ease;
+  border-radius: 1.6rem;
+  background-color: var(--blanco);
+  box-shadow: 1.6rem 1.6rem 3.2rem var(--sombra-ppal), -1.6rem -1.6rem 3.2rem var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+}
+.carrusel .puntos {
+  width: 100%;
+  padding: 1.6rem;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.carrusel .puntos .punto {
+  width: 2rem;
+  height: 2rem;
+  margin: 2rem;
+  color: var(--negro);
+  transition: all 0.4s ease;
+  border-radius: 1.6rem;
+  background-color: var(--blanco);
+  box-shadow: 0.6rem 0.6rem 1.2rem var(--sombra-ppal), -0.6rem -0.6rem 1.2rem var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+}
+
+.carrusel .punto.activo {
+  background-color: #a5b1c6;
+  opacity: 1;
+  box-shadow: 0px 0px 0px 0px #fff9, 0px 0px 0px 0px #fff9, 0px 0px 0px 0px #0001, 0px 0px 0px 0px #0001, inset -8px -8px 20px 0px #fff9, inset -5px -5px 6px 0px #fff9, inset 8px 8px 20px 0px #0003, inset 5px 5px 6px 0px #0001;
+}
+
 /*CARDS*/
 .container-cards {
   width: 100%;
@@ -83,16 +154,15 @@
 
 .card-1 {
   text-align: center;
-  margin: 20px 0;
   transition: all 0.2s ease-in-out;
-  padding: 20px;
-  width: 270px;
+  padding: 2rem;
+  width: 25rem;
 }
 .card-1:hover {
   border-radius: 4px;
-  box-shadow: 2px 2px 5px 3px rgba(110, 104, 104, 0.75);
-  -webkit-box-shadow: 2px 2px 5px 3px rgba(110, 104, 104, 0.75);
-  -moz-box-shadow: 2px 2px 5px 3px rgba(110, 104, 104, 0.75);
+  box-shadow: 2px 2px 5px 3px rgba(133, 131, 131, 0.75);
+  -webkit-box-shadow: 2px 2px 5px 3px rgba(133, 131, 131, 0.75);
+  -moz-box-shadow: 2px 2px 5px 3px rgba(133, 131, 131, 0.75);
 }
 .card-1 a {
   text-decoration: none;
@@ -106,22 +176,22 @@
 }
 .card-1 a div {
   text-align: center;
-  margin-top: 10px;
+  margin-top: 1rem;
 }
 .card-1 a div .p-categories span {
-  font-size: 14px;
+  font-size: 1.4rem;
 }
 .card-1 a div h3 {
-  font-size: 17px;
+  font-size: 1.7rem;
   font-weight: bold;
 }
 .card-1 a div .p-prices span {
-  font-size: 17px;
+  font-size: 1.7rem;
   color: #05a805;
   font-weight: bold;
 }
 .card-1 a div button {
-  font-size: 15px;
+  font-size: 1.5rem;
   padding: 10px;
   background-color: #e6e6e6;
   border: none;

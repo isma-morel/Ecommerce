@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Roboto:wght@100;300;400;500&display=swap');
 @import 'base/reset';
 @import 'base/var';
+@import 'base/vars';
+@import 'base/mixin';
 @import 'base/list';
 @import 'components/header';
+@import 'components/my-carousel';
 @import 'components/cards';
