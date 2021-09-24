@@ -1,19 +1,40 @@
+
+/*tittle*/
+
+
+.container-tittle {
+    text-align: center;
+    margin: 6rem 0;
+    h1 {
+        a {
+            font-size: nth($font-sizes , 1 );
+            font-family: $family-1;
+            text-decoration: none;
+            color: black;
+        }
+    }
+}
+
+
+
 /*CARDS*/
 
 .container-cards {
     width: 100%;
+    justify-content: space-around;
 }
 
 .card-1 {
     text-align: center;
-    transition: all .2s ease-in-out;
+    transition: all .4s ease-in;
     padding: 2rem;
-    width: 25rem;
+    border-radius: 9px;
+
+
     &:hover {
-        border-radius: 4px;
-        box-shadow: 2px 2px 5px 3px rgba(133, 131, 131, 0.75);
-        -webkit-box-shadow: 2px 2px 5px 3px rgba(133, 131, 131, 0.75);
-        -moz-box-shadow: 2px 2px 5px 3px rgba(133, 131, 131, 0.75);
+    background: #ffffff;
+    box-shadow:  20px 20px 38px #b8b8b8,
+        -20px -20px 38px #ffffff;
     }
         a {
         text-decoration: none;
@@ -21,7 +42,7 @@
         font-weight: 300;
         color: black;
         img {
-            width: 100%;
+            width: 80%;
             height: auto;
         }
         div {

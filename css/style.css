@@ -27,7 +27,6 @@
 /*MEDIUM*/
 /*REGULAR*/
 /*FONT-SIZE*/
-/*button*/
 .redesSociales {
   background-color: white;
   display: flex;
@@ -92,7 +91,6 @@
 
 .carrusel {
   width: 100%;
-  max-width: 192rem;
   color: var(--negro);
   transition: all 0.4s ease;
   border-radius: 0;
@@ -111,7 +109,7 @@
   border-radius: 0;
   background-color: var(--blanco);
   box-shadow: 1.6rem 1.6rem 3.2rem var(--sombra-ppal), -1.6rem -1.6rem 3.2rem var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
-  transition: all 0.5s ease;
+  transition: all 0.5s ease-in-out;
   transform: translateX(0%);
 }
 .carrusel .grande .img-carousel1 {
@@ -139,6 +137,7 @@
   border-radius: 1.6rem;
   background-color: var(--blanco);
   box-shadow: 0.6rem 0.6rem 1.2rem var(--sombra-ppal), -0.6rem -0.6rem 1.2rem var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+  cursor: pointer;
 }
 
 .carrusel .punto.activo {
@@ -147,22 +146,33 @@
   box-shadow: 0px 0px 0px 0px #fff9, 0px 0px 0px 0px #fff9, 0px 0px 0px 0px #0001, 0px 0px 0px 0px #0001, inset -8px -8px 20px 0px #fff9, inset -5px -5px 6px 0px #fff9, inset 8px 8px 20px 0px #0003, inset 5px 5px 6px 0px #0001;
 }
 
+/*tittle*/
+.container-tittle {
+  text-align: center;
+  margin: 6rem 0;
+}
+.container-tittle h1 a {
+  font-size: 3.1rem;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  color: black;
+}
+
 /*CARDS*/
 .container-cards {
   width: 100%;
+  justify-content: space-around;
 }
 
 .card-1 {
   text-align: center;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.4s ease-in;
   padding: 2rem;
-  width: 25rem;
+  border-radius: 9px;
 }
 .card-1:hover {
-  border-radius: 4px;
-  box-shadow: 2px 2px 5px 3px rgba(133, 131, 131, 0.75);
-  -webkit-box-shadow: 2px 2px 5px 3px rgba(133, 131, 131, 0.75);
-  -moz-box-shadow: 2px 2px 5px 3px rgba(133, 131, 131, 0.75);
+  background: #ffffff;
+  box-shadow: 20px 20px 38px #b8b8b8, -20px -20px 38px #ffffff;
 }
 .card-1 a {
   text-decoration: none;
@@ -171,7 +181,7 @@
   color: black;
 }
 .card-1 a img {
-  width: 100%;
+  width: 80%;
   height: auto;
 }
 .card-1 a div {
@@ -200,6 +210,68 @@
 .card-1 a div button:hover {
   background-color: black;
   color: #ffff;
+}
+
+.options {
+  width: 100%;
+  text-align: center;
+  margin: 4rem 0;
+}
+.options .cart {
+  font-family: "Roboto", sans-serif;
+  width: 48rem;
+  height: 11rem;
+  font-size: 2.5rem;
+  margin-right: 4rem;
+  background-color: black;
+  color: #ffff;
+  transition: all 0.3s ease-in;
+}
+.options .cart:hover {
+  background-color: #ffff;
+  color: black;
+}
+.options .cart span {
+  font-size: 5rem;
+}
+.options .wp {
+  font-family: "Roboto", sans-serif;
+  width: 48rem;
+  height: 11rem;
+  font-size: 2.5rem;
+  margin-left: 4rem;
+  background-color: black;
+  color: #ffff;
+  transition: all 0.3s ease-in;
+  padding: 1rem;
+}
+.options .wp:hover {
+  background-color: #ffff;
+  color: black;
+}
+.options .wp span {
+  font-size: 5rem;
+}
+
+@media screen and (max-width: 1050px) {
+  .options {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    margin-top: 5rem;
+  }
+  .options .cart {
+    margin: 2rem 0;
+    width: 100%;
+  }
+  .options .wp {
+    margin: 2rem 0;
+    width: 100%;
+    padding: 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

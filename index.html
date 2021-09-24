@@ -8,8 +8,11 @@
     <!--LINKS CSS-->
     <!--BOOTSTRAP-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!--bootstrap icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <!--STYLE-->
     <link rel="stylesheet" href="css/style.css">
+    
 </head>
 <body>
 
@@ -17,11 +20,11 @@
         <div class="redesSociales">
             <div class="telContact">
                 <img src="images/iconos/telefono.png" alt="Teléfono">
-                <p>(011) 6620 - 5844</p>
+                <p></p>
             </div>
             <div class="mailContact">
                 <img src="images/iconos/correo-electronico-vacio.png" alt="Mail">
-                <p>uri21199@gmail.com</p>
+                <p></p>
             </div>
             <div class="logosRs">
                 <a href="#" class="logosRedes">
@@ -59,21 +62,14 @@
     <main>
         <section id="#carousel-comida">
             <div class="carrusel">
-                <div class="grande">
-                    <img src="https://i.ibb.co/GPgntwZ/slider-box.jpg" alt="Sopa" class="img-carousel1">
-                    <img src="https://i.ibb.co/0KjF110/slider-guiso.jpg" alt="Sopa" class="img-carousel1">
-                </div>
-                <ul class="puntos">
-                    <li class="punto activo"></li>
-                    <li class="punto"></li>
-                </ul>
+                
             </div>
         </section>
         <section id="#cards-comida">
             <div class="container-tittle">
-                <h1>NUESTROS PLATOS</h1>
+                <h1><a href="">NUESTROS PLATOS</a></h1>
             </div>
-            <div class="container-cards row justify-content-around">
+            <div class="container-cards gx-3 row">
                 <div class="cards-comida card-1 col-lg-3 col-md-6 col-sm-12">
                     <a href="">
                         <img src="https://i.ibb.co/tBVJkWK/guiso-de-hongo-silvestres-510x510.jpg" alt="Guiso de hongos silvestres">
@@ -315,19 +311,9 @@
                     </a>
                 </div>
             </div>
-            <div class="container-options">
-                <div>
-                    <a href="">
-                        <div class="ver-carrito">
-                            <h2>VER CARRITO DE COMPRAS</h2>
-                        </div>
-                    </a>
-                    <a href="">
-                        <div class="comprar-porwp">
-                            <h2>COMPRAR POR WHATSAPP</h2>
-                        </div>
-                    </a>
-                </div>
+            <div class="options">
+                <button class="cart"><span><i class="bi bi-bag"></i></span> CART</button>
+                <button class="wp"><span><i class="bi bi-whatsapp"></i></span> COMPRAR POR WHATSAPP</button>
             </div>
         </section>
     </main>

@@ -1,0 +1,63 @@
+.options {
+    width: 100%;
+    text-align: center;
+    margin: 4rem 0;
+    .cart {
+        font-family: $family-1;
+        width: 48rem;
+        height: 11rem;
+        font-size: nth($font-sizes , 6 );
+        margin-right: 4rem;
+        background-color: black;
+        color: #ffff;
+        transition: all .3s ease-in;
+        &:hover {
+            background-color: #ffff;
+            color: black;
+        }
+        span {
+            font-size: 5rem;
+        }
+    }
+    .wp {
+        font-family: $family-1;
+        width: 48rem;
+        height: 11rem;
+        font-size: nth($font-sizes , 6 );
+        margin-left: 4rem;
+        background-color: black;
+        color: #ffff;
+        transition: all .3s ease-in;
+        padding: 1rem;
+        &:hover {
+            background-color: #ffff;
+            color: black;
+        }
+        span {
+            font-size: 5rem;
+        }
+    }
+}
+
+
+@media screen and (max-width: 1050px) {
+    .options {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+        margin-top: 5rem;
+        .cart {
+            margin: 2rem 0;
+            width: 100%;
+        }
+        .wp {
+            margin: 2rem 0;
+            width: 100%;
+            padding: 0;
+        }
+    }
+    
+}
