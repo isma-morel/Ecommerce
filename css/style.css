@@ -89,61 +89,8 @@
   margin: 0 5px;
 }
 
-.carrusel {
-  width: 100%;
-  color: var(--negro);
-  transition: all 0.4s ease;
-  border-radius: 0;
-  background-color: var(--blanco);
-  box-shadow: 1.6rem 1.6rem 3.2rem var(--sombra-ppal), -1.6rem -1.6rem 3.2rem var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
-  overflow-x: hidden;
-}
-.carrusel .grande {
-  width: 200%;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-start;
-  align-items: center;
-  color: var(--negro);
-  transition: all 0.4s ease;
-  border-radius: 0;
-  background-color: var(--blanco);
-  box-shadow: 1.6rem 1.6rem 3.2rem var(--sombra-ppal), -1.6rem -1.6rem 3.2rem var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
-  transition: all 0.5s ease-in-out;
-  transform: translateX(0%);
-}
-.carrusel .grande .img-carousel1 {
-  width: calc(100% / 2);
-  color: var(--negro);
-  transition: all 0.4s ease;
-  border-radius: 0;
-  background-color: var(--blanco);
-  box-shadow: 1.6rem 1.6rem 3.2rem var(--sombra-ppal), -1.6rem -1.6rem 3.2rem var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
-}
-.carrusel .puntos {
-  width: 100%;
-  padding: 1.6rem;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  align-items: center;
-}
-.carrusel .puntos .punto {
-  width: 2rem;
-  height: 2rem;
-  margin: 2rem;
-  color: var(--negro);
-  transition: all 0.4s ease;
-  border-radius: 1.6rem;
-  background-color: var(--blanco);
-  box-shadow: 0.6rem 0.6rem 1.2rem var(--sombra-ppal), -0.6rem -0.6rem 1.2rem var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
-  cursor: pointer;
-}
-
-.carrusel .punto.activo {
-  background-color: #9ca2ad;
-  opacity: 1;
-  box-shadow: 0px 0px 0px 0px #fff9, 0px 0px 0px 0px #fff9, 0px 0px 0px 0px #0001, 0px 0px 0px 0px #0001, inset -8px -8px 20px 0px #fff9, inset -5px -5px 6px 0px #fff9, inset 8px 8px 20px 0px #0003, inset 5px 5px 6px 0px #0001;
+.carousel-item {
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-out;
 }
 
 /*tittle*/
